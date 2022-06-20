@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>CAMII strain biobank</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+
+    <script type="text/javascript" src="./../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./../static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/b-html5-1.7.1/cr-1.5.4/datatables.min.js"></script>
+    <script type="text/javascript" src="./../static/js/autocomplete.js"></script>
+
+    <script type="text/javascript" src="https://raw.githubusercontent.com/popperjs/popper-core/master/src/createPopper.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.25/b-1.7.1/b-colvis-1.7.1/b-html5-1.7.1/cr-1.5.4/datatables.min.css"/>
+    <link href="./../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./../static/css/carousel.css" rel="stylesheet">
+    <link href="./../static/css/product.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+	  <!-- Start of NAVBAR SECTION -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CAMII biobank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://wanglab.c2b2.columbia.edu/">Maintained by Wang lab @ CUMC</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Yiming Huang (yiminghuang0405@gmail.com)</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+	  <!-- End of NAVBAR SECTION-->
+    </header>
+
+    <main>
+	  <!-- Start of EXTENSIVE PERSONALIZED HUMAN ... + SURROUNDING AREA SECTION -->
+      <!-- Images in this section--> <div class="marketing overflow-hidden p-md-5 text-left bg-light" style="margin-bottom: 0px;background-size: 1350px; background-image: url('./../static/img/web_fig1.png');"> 
+        <div class="col-md-14 p-lg-1">
+          <h2 class="display-6 fw-normal">&nbsp &nbsp &nbsp Extensive personalized human gut strain collection<br>&nbsp &nbsp &nbsp with phenotypic data by CAMII</h2>
+          <p id="boradIsolateCount">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Contains 16,584 isolates spanning >400 taxa with a rich set of linked<br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp morphologic, phenotypic, taxonomic and WGS data</p>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		  <a class="btn btn-outline-primary" href="#SearchMethods">Search in biobank</a>
+        </div>
+      </div>
+	  <!-- End of EXTENSIVE PERSONALIZED HUMAN ... + SURROUNDING AREA SECTION -->
+	  
+      <div class="">
+	    <!-- Start of Culturomics by Automated Microbiome + Standardized colony morphological SECTION -->
+        <div class="d-md-flex flex-md-equal my-md-3">
+		  <!-- Start of Culturomics by Automated Microbiome SECTION -->
+          <div class="bg-light me-md-3 pt-4 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div>
+              <h3 class="display-7 fw-normal">Culturomics by Automated Microbiome<br>Imaging and Isolation (CAMII) system </h3>
+              <p class="lead">CAMII enables large-scale end-to-end generation of clonal<br>strains from diverse input microbiome samples.<br></p>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-3">
+                <img src="./../static/img/web_fig2.png" alt="Italian Trulli" width="280" height="282">
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3">
+                <video width="158" height="282" controls>
+                  <source src="./../static/img/web_video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <p><b>Maximum capacity:</b> 2,000 colonies per hour and 12,000 isolates per run</p>
+            <br>
+          </div>
+		  <!-- End of Culturomics by Automated Microbiome SECTION -->
+		  
+		  <!-- Start of Standardized colony morphological SECTION -->
+          <div class="bg-light me-md-3 pt-4 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div>
+              <h3 class="display-7 fw-normal">Standardized colony morphological data<br>gathering and analyzing</h3>
+              <p class="lead">Morphological features of colonies significantly improved<br>strain isolation and cultivation</p>
+            </div>
+            <img src="./../static/img/web_fig3.png" alt="Italian Trulli" width="480" height="288">
+            <p>Scripts for analyzing colony images can be accessed at <a href="https://github.com/hym0405/CAMII" target="_blank">GitHub</a></p>
+            <br>
+          </div>
+		  <!-- End of Standardized colony morphological SECTION -->
+
+        </div>
+		<!-- End of Culturomics by Automated Microbiome + Standardized colony morphological SECTION -->
+      </div>
+      <a id="SearchMethods"></a>
+	  
+	  <!-- Start of Search by Isolate + Taxonomy + Morphology QuickLinks Section -->
+      <div class="marketing p-md-5 bg-light">
+        <div class="row text-center">
+          
+		  <!-- Start of Isolate QuickLink Section -->
+		  <div class="col-md-4">
+            <img class="bd-placeholder-img rounded-circle mb-3" src="./../static/img/searchIcon_1.png" width="140" height="140">
+            <h2>Search by Isolate</h2>
+            <p>Check the information of all isolates.</p>
+            <p><a class="btn btn-secondary" href="#SearchByIsolate">View details &raquo;</a></p>
+          </div>
+		  <!-- End of Isolate QuickLink Section -->
+		  
+		  <!-- Start of Taxonomy QuickLink Section -->
+          <div class="col-md-4">
+            <img class="bd-placeholder-img rounded-circle mb-3" src="./../static/img/searchIcon_2.png" width="140" height="140">
+            <h2>Search by Taxonomy</h2>
+            <p>Search isolates by specific taxa or find isolates that best match 16S sequence your provide</p>
+            <p><a class="btn btn-secondary" href="#SearchByTaxonomy">View details &raquo;</a></p>
+          </div>
+		  <!-- End of Taxonomy QuickLink Section -->
+		  
+		  <!-- Start of Morphology QuickLink Section -->
+          <div class="col-md-4">
+            <img class="bd-placeholder-img rounded-circle mb-3" src="./../static/img/searchIcon_3.png" width="140" height="140">
+            <h2>Search by Morphology</h2>
+            <p>Coming soon</p>
+            <p><a class="btn btn-secondary" href="#SearchByImage">View details &raquo;</a></p>
+          </div>
+		  <!-- End of Morphology QuickLink Section -->
+		  
+        </div>
+	  <!-- End of Search by Isolate + Taxonomy + Morphology QuickLinks Section -->
+
+        <a id="SearchByIsolate"></a>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+		  
+		  <!-- Start of Search by Isolate Text + Buttons Section -->
+		  <!-- Big col-lg size means table is pushed to next level -->
+          <div class="col-lg-12">
+            <h2>Search by Isolate</h2>
+            <p class="lead">Check the information of all isolates</p>
+            <!-- Start of Text Section -->
+			<div class="col-md-4 mb-4">
+              <form class="row g-2">
+                <div class="col-auto">
+                  <label for="isolateSearchInput" class="visually-hidden">F. prausnitzii</label>
+                  <input id="isolateSearchInput" type="text" class="form-control" placeholder="F. prausnitzii" autocomplete="off">
+                  <div class="position-absolute invisible" id="isolateSearchInput_complete"></div>
+                </div>
+                <div class="col-auto">
+                  <button id="isolateSearchButton" type="button" class="btn btn-outline-primary">Search</button>
+                </div>
+              </form>
+            </div>
+			<!-- End of Text Section -->
+			
+			<!-- Start of Buttons Section -->
+            <div class="col-md-6 mb-4">
+              <div class="row g-3">
+                <div class="col-lg-7">
+                  <button id="isolateAllButton" type="button" class="btn btn-outline-secondary">Show all isolates</button>
+                </div>
+                <div class="col-lg-7">
+                  <button id="isolateWGSButton" type="button" class="btn btn-outline-success">Show isolates with WGS</button>
+                </div>
+                <div class="col-lg-7">
+                  <button id="isolateHQgenomeButton" type="button" class="btn btn-outline-danger">Show isolates with high-quality draft genome</button>
+                </div>
+              </div>
+            </div>
+			<!-- End of Buttons Section -->
+			
+          </div>
+		  <!-- End of Search by Isolate Text + Buttons section -->
+		  
+		  <!-- Start of Table Section -->
+		  <!-- Lack of class here may also be contributing factor to table being on newline, which is a good thing -->
+          <div id="allIsolateTableContainer">
+            <div class="mb-3" id="allLabelContainer">
+              <h4 id='allLabel'>Information of all isolates</h4>
+            </div>
+            <table id='allIsolateTable' class='display compact table table-condensed table-hover table-striped nowrap' style="font-size: 13px; text-align: center;">
+              <thead>
+                <tr>
+                  <th rowspan="2">Isolate ID</th>
+                  <th rowspan="2">Destination plate</th>
+          				<th rowspan="2">Destination well</th>
+                  <th rowspan="2">Culturing media</th>
+          				<th rowspan="2">Source plate</th>
+          				<th rowspan="2">Source index</th>
+                  <th rowspan="2">Source sample</th>
+                  <th rowspan="2">Isolation platform</th>
+                  <th rowspan="2">Isolation strategy</th>
+                  <th rowspan="2">Isolation date</th>
+                  <th colspan="9">Taxonomy by 16SV4</th>
+                  <th colspan="6">Whole genome sequencing</th>
+                </tr>
+                <tr>
+                  <th>Kindom</th>
+                  <th>Phylum</th>
+                  <th>Class</th>
+                  <th>Order</th>
+                  <th>Family</th>
+                  <th>Genus</th>
+                  <th>Species</th>
+                  <th>Purity (%)</th>
+                  <th>Hetergenity (%)</th>
+                  <th>Assembly size (bp)</th>
+                  <th># of contigs</th>
+                  <th>Largest contig (bp)</th>
+                  <th>N50 (bp)</th>
+                  <th>GC content (%)</th>
+                  <th># of PE reads</th>
+                  <th>16SV4 sequence</th>
+                </tr>
+              </thead>
+      			</table>
+          </div>
+		  <!-- End of Table Section -->
+		  
+		  <!-- ask if following code, from 254 to 294 is necessary, as it seems to just be the above table section code repeated and is grayed out in the display section -->
+          <div id="searchIsolateTableContainer" class="d-none">
+            <div class="mb-3" id="searchLabelContainer">
+            </div>
+            <table id='searchIsolateTable' class='display compact table table-condensed table-hover table-striped nowrap' style="font-size: 13px; text-align: center;">
+              <thead>
+                <tr>
+                  <th rowspan="2">Isolate ID</th>
+                  <th rowspan="2">Destination plate</th>
+                  <th rowspan="2">Destination well</th>
+                  <th rowspan="2">Culturing media</th>
+                  <th rowspan="2">Source plate</th>
+                  <th rowspan="2">Source index</th>
+                  <th rowspan="2">Source sample</th>
+                  <th rowspan="2">Isolation platform</th>
+                  <th rowspan="2">Isolation strategy</th>
+                  <th rowspan="2">Isolation date</th>
+                  <th colspan="9">Taxonomy by 16SV4</th>
+                  <th colspan="6">Whole genome sequencing</th>
+                </tr>
+                <tr>
+                  <th>Kindom</th>
+                  <th>Phylum</th>
+                  <th>Class</th>
+                  <th>Order</th>
+                  <th>Family</th>
+                  <th>Genus</th>
+                  <th>Species</th>
+                  <th>Purity (%)</th>
+                  <th>Hetergenity (%)</th>
+                  <th>Assembly size (bp)</th>
+                  <th># of contigs</th>
+                  <th>Largest contig (bp)</th>
+                  <th>N50 (bp)</th>
+                  <th>GC content (%)</th>
+                  <th># of PE reads</th>
+                  <th>16SV4 sequence</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+		<!-- End of code in question -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <a id="SearchByTaxonomy"></a>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+		
+		  <!-- Start of Text + Buttons Section -->
+          <div class="col-lg-5 order-lg-1">
+            <h2>Search by Taxonomy</h2>
+            <p class="lead">Search isolates by specific taxa or find isolates that best match 16S sequence your provide</p>
+			
+			<!-- Start of Tab Section -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <!-- By Tax Annotate Tab --><button class="nav-link active" id="annotation-tab" data-bs-toggle="tab" data-bs-target="#annotation" type="button" role="tab" aria-controls="annotation" aria-selected="true">By taxonomy annotation</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <!-- By 16SV4 Sequence Tab --> <button class="nav-link" id="seq16SV4-tab" data-bs-toggle="tab" data-bs-target="#seq16SV4" type="button" role="tab" aria-controls="seq16SV4" aria-selected="false">By 16SV4 sequence</button>
+              </li>
+            </ul>
+			<!-- End of Tab Section -->
+			
+            <div class="tab-content" id="myTabContent">
+			<!-- Start of Taxonomy Annotation Form Section -->
+              <div class="tab-pane fade show active" id="annotation" role="tabpanel" aria-labelledby="annotatio-tab">
+                <div class="mb-3"></div>
+                <div class="row">
+                  <div class="col-lg-5 order-lg-1">
+                    <select id="select_k" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Kingdom</option>
+                    </select>
+                    <select id="select_p" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Phylum</option>
+                    </select>
+                    <select id="select_c" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Class</option>
+                    </select>
+                    <select id="select_o" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Order</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-5 order-lg-2">
+                    <select id="select_f" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Family</option>
+                    </select>
+                    <select id="select_g" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Genus</option>
+                    </select>
+                    <select id="select_s" class="form-select mb-3" aria-label=".form-select example">
+                      <option value="default" selected>Select Species</option>
+                    </select>
+                    <div class="row">
+                      <div class="col-lg-1"><button id="taxonomySearchResetButton" type="button" class="btn btn-outline-secondary">Reset</button></div>
+                      <div class="col-lg-4"></div>
+                      <div class="col-lg-1"><button id="taxonomySearchSubmitButton" type="button" class="btn btn-outline-primary">Submit</button></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="searchTaxonomyWGScheck">
+                    <label class="form-check-label" for="searchTaxonomyWGScheck">with WGS</label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="searchTaxonomyHQcheck">
+                    <label class="form-check-label" for="searchTaxonomyHQcheck">with high-quality genome</label>
+                  </div>
+                </div>
+              </div>
+			  <!-- End of Taxonomy Annotation Form Section -->
+			  
+			  <!-- Start of 16SV4 Section -->
+              <div class="tab-pane fade" id="seq16SV4" role="tabpanel" aria-labelledby="seq16SV4-tab">
+                <div class="mb-2"></div>
+                <div class="mb-2 col-lg-11">
+                  <label for="search16SV4TypeInput" class="form-label">Type your 16SV4 sequence here (no header):</label>
+                  <textarea class="form-control" id="search16SV4TypeInput" rows="3"></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-lg-9 mb-2">
+                    <label>Or upload your 16SV4 sequences (FASTA format)<br>Maximum query: 20 sequences</label>
+                  </div>
+                  <div class="col-lg-2">
+                    <button id="search16SV4ExampleButton" type="button" class="btn btn-outline-secondary btn-sm">Example</button>
+                  </div>
+                </div>
+                <div class="mb-2 row">
+                  <div class="col-9">
+                    <input name="file16SV" class="form-control" id="search16SV4file" type="file">
+                  </div>
+                  <div class="col-1">
+                    <button id="search16SV4ResetButton" type="button" class="btn btn-outline-secondary">Reset</button>
+                  </div>
+                </div>
+                <div class="mb-2 row">
+                  <label for="search16SV4similaryCutoff" class="form-label">Threshold of percent identity by BLAST (default: 97)</label>
+                  <div class="col-lg-3">
+                    <input type="text" class="form-control" id="search16SV4similaryCutoff" placeholder="97">
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="search16SV4WGScheck">
+                      <label class="form-check-label" for="search16SV4WGScheck">with WGS</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="search16SV4HQcheck">
+                      <label class="form-check-label" for="search16SV4HQcheck">with high-quality genome</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <button id="search16SV4SubmitButton" type="button" class="btn btn-outline-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+			  <!-- End of 16SV4 Sequence Section -->
+            </div>
+          </div>
+		  <!-- End of Text + Buttons Section -->
+		  
+		  <!-- Start of Table Section -->
+          <div id="searchTaxonomyTaxContainer" class="col-lg-7 order-lg-2">
+            <div id="searchTaxonomyLabelContainer" class="mb-4">
+            </div>
+            <div id="searchTaxonomyTableContainer">
+              <table id='searchTaxonomyTable' class='display compact table table-condensed table-hover table-striped nowrap' style="font-size: 13px; text-align: center;">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Isolate ID</th>
+                    <th rowspan="2">Destination plate</th>
+                    <th rowspan="2">Destination well</th>
+                    <th rowspan="2">Culturing media</th>
+                    <th rowspan="2">Source plate</th>
+                    <th rowspan="2">Source index</th>
+                    <th rowspan="2">Source sample</th>
+                    <th rowspan="2">Isolation platform</th>
+                    <th rowspan="2">Isolation strategy</th>
+                    <th rowspan="2">Isolation date</th>
+                    <th colspan="9">Taxonomy by 16SV4</th>
+                    <th colspan="6">Whole genome sequencing</th>
+                  </tr>
+                  <tr>
+                    <th>Kindom</th>
+                    <th>Phylum</th>
+                    <th>Class</th>
+                    <th>Order</th>
+                    <th>Family</th>
+                    <th>Genus</th>
+                    <th>Species</th>
+                    <th>Purity (%)</th>
+                    <th>Hetergenity (%)</th>
+                    <th>Assembly size (bp)</th>
+                    <th># of contigs</th>
+                    <th>Largest contig (bp)</th>
+                    <th>N50 (bp)</th>
+                    <th>GC content (%)</th>
+                    <th># of PE reads</th>
+                    <th>16SV4 sequence</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+		  <!-- End of Table Section -->
+		  
+		  <!-- Ask if following table code, from 473 to 517, is really needed -->
+          <div id="searchTaxonomy16SV4Container" class="col-lg-7 order-lg-2 d-none">
+            <div id="searchTaxonomy16SV4LabelContainer" class="mb-4">
+            </div>
+            <div id="searchTaxonomy16SV4TableContainer">
+              <table id='searchTaxonomy16SV4Table' class='display compact table table-condensed table-hover table-striped nowrap' style="font-size: 13px; text-align: center;">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Matched sequence</th>
+                    <th rowspan="2">Percent identity</th>
+                    <th rowspan="2">Isolate ID</th>
+                    <th rowspan="2">Destination plate</th>
+                    <th rowspan="2">Destination well</th>
+                    <th rowspan="2">Culturing media</th>
+                    <th rowspan="2">Source plate</th>
+                    <th rowspan="2">Source index</th>
+                    <th rowspan="2">Source sample</th>
+                    <th rowspan="2">Isolation platform</th>
+                    <th rowspan="2">Isolation strategy</th>
+                    <th rowspan="2">Isolation date</th>
+                    <th colspan="9">Taxonomy by 16SV4</th>
+                    <th colspan="6">Whole genome sequencing</th>
+                  </tr>
+                  <tr>
+                    <th>Kindom</th>
+                    <th>Phylum</th>
+                    <th>Class</th>
+                    <th>Order</th>
+                    <th>Family</th>
+                    <th>Genus</th>
+                    <th>Species</th>
+                    <th>Purity (%)</th>
+                    <th>Hetergenity (%)</th>
+                    <th>Assembly size (bp)</th>
+                    <th># of contigs</th>
+                    <th>Largest contig (bp)</th>
+                    <th>N50 (bp)</th>
+                    <th>GC content (%)</th>
+                    <th># of PE reads</th>
+                    <th>16SV4 sequence</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+		<!-- End of table code in question -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <a id="SearchByMorphology"></a>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2>Search by Morphology</h2>
+            <p class="lead">Coming soon</p>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+
+
+
+
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>Wang lab @ Columbia University Irving Medical Center; <a href="http://wanglab.c2b2.columbia.edu/" target="_blank">Lab website</a></p>
+    </footer>
+  </main>
+
+  <script type="text/javascript" src="./../static/js/searchByTaxonomy_selectControl.js"></script>
+  <script type="text/javascript" src="./../static/js/buttonControl.js"></script>
+  <script type="text/javascript" src="./../static/js/searchByIsolate_read_isolateTable.js"></script>
+
+
+
+  </body>
+</html>
