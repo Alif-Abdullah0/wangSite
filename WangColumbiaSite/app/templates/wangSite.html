@@ -554,17 +554,32 @@
                     <!-- Size Features Slider-->
                     <div class="row">
                       <div class="col-lg-auto">
-                        <label class="form-label" for="sizeRange">Size Slider</label>
+                        <label class="form-label lead" for="sizeRange">Size Slider</label>
                         <input type="range" class="form-range" id="sizeRange" min="0" max="100">
                         <p> current slider value: {to be changed via js}</p>
                       </div>
                     </div>
                     <!-- End of Size Features Slider-->
 
-                    <!-- Start of RGB Color Text Fields-->
+                    <div class="mb-3"></div>
+
+                    <!-- Density Features Slider-->
                     <div class="row">
                       <div class="col-lg-auto">
-                        <label class="form-label" for="redTextBox">Red</label>
+                        <label class="form-label lead" for="densityRange">Density Slider</label>
+                        <input type="range" class="form-range" id="densityRange" min="0" max="100">
+                        <p> current slider value: {to be changed via js}</p>
+                      </div>
+                    </div>
+                    <!-- End of Density Features Slider-->
+
+                    <div class="mb-3"></div>
+
+                    <!-- Start of RGB Color Text Fields-->
+                    <label class="form-label lead" for="colorRow">Color Input Section</label>
+                    <div class="row" id="colorRow">
+                      <div class="col-lg-auto">
+                        <label class="form-label" for="redTextBox">R</label>
                       </div>
                       <div class="col-lg-auto">
                         <input class="form-control" type="text" id="redTextBox">
@@ -575,7 +590,7 @@
                     
                     <div class="row">
                       <div class="col-lg-auto">
-                        <label class="form-label" for="greenTextBox">Green</label>
+                        <label class="form-label" for="greenTextBox">G</label>
                       </div>
                       <div class="col-lg-auto">
                         <input class="form-control" type="text" id="greenTextBox">
@@ -586,7 +601,7 @@
 
                     <div class="row">
                       <div class="col-lg-auto">
-                        <label class="form-label" for="blueTextBox">Blue</label>
+                        <label class="form-label" for="blueTextBox">B</label>
                       </div>
                       <div class="col-lg-auto">
                         <input class="form-control" type="text" id="blueTextBox">
