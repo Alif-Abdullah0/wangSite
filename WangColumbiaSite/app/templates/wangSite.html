@@ -549,48 +549,58 @@
             <!-- Morpho Feature Tab Content -->
             <div class="tab-content">
               <div class="tab-pane fade show active" id="morphoFeatureTabContent" role="tabpanel" aria-labelledby="morphoFeatureTab">
-                <div class="mb-3"></div>
-                <div class="col-lg-11">
-
-                  <!-- Grid like format for checkbox formatting in Morpho Features Tab Content -->
+                <p class="lead">Search morphology by characteristic</p>
+                  <!-- Grid like format for input UI in Morpho Features Tab Content -->
+                    <!-- Size Features Slider-->
                     <div class="row">
-                      <!-- Size Features Checkboxes-->
                       <div class="col-lg-auto">
-
-                          <div class="form-check"> 
-                            <input class="form-check-input" type="checkbox" value="small" id="smallSizeCheckBox">
-                            <label class="form-check-label" for="smallSizeCheckBox">small sized</label>
-                          </div>
-                          <div class="form-check"> 
-                            <input class="form-check-input" type="checkbox" value="medium" id="mediumSizeCheckBox">
-                            <label class="form-check-label" for="mediumSizeCheckBox">medium sized</label>
-                          </div>
-
-                          <div class="form-check"> 
-                            <input class="form-check-input" type="checkbox" value="large" id="largeSizeCheckBox">
-                            <label class="form-check-label" for="largeSizeCheckBox">large sized</label>
-                          </div>
-
+                        <label class="form-label" for="sizeRange">Size Slider</label>
+                        <input type="range" class="form-range" id="sizeRange" min="0" max="100">
+                        <p> current slider value: {to be changed via js}</p>
                       </div>
-                      <!-- End of Size Features Checkboxes-->
-                      
-
-                      
-                      <!-- Color Features Checkboxes-->
-                      bruh
-                      <!-- End of Color Features Checkboxes-->
-                    
-
                     </div>
-                  <!-- End of Grid like format for checkbox formatting in Morpho Features Tab Content -->  
+                    <!-- End of Size Features Slider-->
 
+                    <!-- Start of RGB Color Text Fields-->
+                    <div class="row">
+                      <div class="col-lg-auto">
+                        <label class="form-label" for="redTextBox">Red</label>
+                      </div>
+                      <div class="col-lg-auto">
+                        <input class="form-control" type="text" id="redTextBox">
+                      </div>
+                    </div>
 
-                  
-                
-                  
+                    <div class="mb-3"></div>
+                    
+                    <div class="row">
+                      <div class="col-lg-auto">
+                        <label class="form-label" for="greenTextBox">Green</label>
+                      </div>
+                      <div class="col-lg-auto">
+                        <input class="form-control" type="text" id="greenTextBox">
+                      </div>
+                    </div>
 
-                  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
-                </div>
+                    <div class="mb-3"></div>
+
+                    <div class="row">
+                      <div class="col-lg-auto">
+                        <label class="form-label" for="blueTextBox">Blue</label>
+                      </div>
+                      <div class="col-lg-auto">
+                        <input class="form-control" type="text" id="blueTextBox">
+                      </div>
+                    </div>
+                    <!-- End of RGB Color Text Fields-->
+                  <!-- End of Grid like format for input UI in Morpho Features Tab Content -->  
+
+                  <div class="row">
+                    <div class="mb-3"></div>
+                    <div class="col-lg-auto">
+                      <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
+                    </div>
+                  </div>
 
               </div>
               <!-- End of Morpho Feature Tab Content -->
