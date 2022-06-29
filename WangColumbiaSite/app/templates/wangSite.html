@@ -156,7 +156,7 @@
             <img class="bd-placeholder-img rounded-circle mb-3" src="./../static/img/searchIcon_3.png" width="140" height="140">
             <h2>Search by Morphology</h2>
             <p>Coming soon</p>
-            <p><a class="btn btn-secondary" href="#SearchByImage">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="#SearchByMorphology">View details &raquo;</a></p>
           </div>
 		  <!-- End of Morphology QuickLink Section -->
 		  
@@ -526,7 +526,7 @@
 		
 		
 		
-		
+        <!-- TODO: Make the ID attribute values for HTML elements in SearchByMorphology Section better -->
         <a id="SearchByMorphology"></a>
         <hr class="featurette-divider">
         <div class="row featurette">
@@ -537,28 +537,89 @@
             <!-- Start of Tabs section-->
             <ul class="nav nav-tabs" id="morphoTabs" role="tablist">
               <li class="nav-item" role="presentation">
-                <!-- By Size Category Tab --><button class="nav-link active" id="morpho-tab-1" data-bs-toggle="tab" data-bs-target="#morphoTab1Content" type="button" role="tab" aria-controls="morphoTab1Content" aria-selected="true">By Size Category</button>
+                <!-- By Size Category Tab --><button class="nav-link active" id="morphoFeatureTab" data-bs-toggle="tab" data-bs-target="#morphoFeatureTabContent" type="button" role="tab" aria-controls="morphoFeatureTabContent" aria-selected="true">By Feature</button>
               </li>
               <li class="nav-item" role="presentation">
-                <!-- By Compare Two Specimen Tab --> <button class="nav-link" id="morpho-tab-2" data-bs-toggle="tab" data-bs-target="#morphoTab2Content" type="button" role="tab" aria-controls="morphoTab2Content" aria-selected="false">Compare Two Specimen</button>
+                <!-- By Compare Two Specimen Tab --> <button class="nav-link" id="morphoSpecificTab" data-bs-toggle="tab" data-bs-target="#morphoSpecificTabContent" type="button" role="tab" aria-controls="morphoSpecificTabContent" aria-selected="false">By Specific Bacteria</button>
               </li>
             </ul>
+
             <!-- End of Tabs section-->
 
-            <div class="tab-pane fade show active" id="morphoTab1Content" role="tabpanel" aria-labelledby="morpho-tab-1">
-              <div class="mb-3"></div>
-              placeholder text for sort by category sizes tab content
-            </div>
+            <!-- Morpho Feature Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="morphoFeatureTabContent" role="tabpanel" aria-labelledby="morphoFeatureTab">
+                <div class="mb-3"></div>
+                <div class="col-lg-11">
 
-            <div class="tab-pane fade" id="morphoTab2Content" role="tabpabel" aria-labelledby="morpho-tab-2">
-              <div class="col-lg-11">
-                <label for="specimen-id-field-1" class="form-label">Input first specimen ID here</label>
-                <textarea id="specimen-id-field-1" class="form-control"></textarea>
+                  <!-- Grid like format for checkbox formatting in Morpho Features Tab Content -->
+                    <div class="row">
+                      <!-- Size Features Checkboxes-->
+                      <div class="col-lg-auto">
 
-                <label for="specimen-id-field-2" class="form-label">Input second specimen ID here</label>
-                <textarea id="specimen-id-field-2" class="form-control"></textarea>
+                          <div class="form-check"> 
+                            <input class="form-check-input" type="checkbox" value="small" id="smallSizeCheckBox">
+                            <label class="form-check-label" for="smallSizeCheckBox">small sized</label>
+                          </div>
+                          <div class="form-check"> 
+                            <input class="form-check-input" type="checkbox" value="medium" id="mediumSizeCheckBox">
+                            <label class="form-check-label" for="mediumSizeCheckBox">medium sized</label>
+                          </div>
+
+                          <div class="form-check"> 
+                            <input class="form-check-input" type="checkbox" value="large" id="largeSizeCheckBox">
+                            <label class="form-check-label" for="largeSizeCheckBox">large sized</label>
+                          </div>
+
+                      </div>
+                      <!-- End of Size Features Checkboxes-->
+                      
+
+                      
+                      <!-- Color Features Checkboxes-->
+                      bruh
+                      <!-- End of Color Features Checkboxes-->
+                    
+
+                    </div>
+                  <!-- End of Grid like format for checkbox formatting in Morpho Features Tab Content -->  
+
+
+                  
+                
+                  
+
+                  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
+                </div>
+
               </div>
+              <!-- End of Morpho Feature Tab Content -->
+
+
+              <!-- Morpho Specific Tab Content-->
+              <div class="tab-pane fade" id="morphoSpecificTabContent" role="tabpabel" aria-labelledby="morphoSpecificTab">
+                <div class="mb-3"></div>
+                <div class="col-lg-11">
+                  <label for="specimen-id-field-1" class="form-label">Input first specimen ID here</label>
+                  <textarea id="specimen-id-field-1" class="form-control"></textarea>
+
+                  <label for="specimen-id-field-2" class="form-label">Input second specimen ID here</label>
+                  <textarea id="specimen-id-field-2" class="form-control"></textarea> <br>
+                  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
+                </div>
+              </div>
+              <!-- End of Morpho Specific Tab Content-->
             </div>
+
+
+              
+
+              <div class="modal fade" id="morphoModal">
+
+              </div>
+              <!-- End of Morpho Tab 3 Content -->
+            </div>
+
           </div>
           <div class="col-lg-5">
           </div>
