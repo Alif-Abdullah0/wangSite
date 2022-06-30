@@ -546,37 +546,75 @@
 
             <!-- End of Tabs section-->
 
-            <!-- Morpho Feature Tab Content -->
+            
             <div class="tab-content">
+              <!-- Morpho Feature Tab Content -->
               <div class="tab-pane fade show active" id="morphoFeatureTabContent" role="tabpanel" aria-labelledby="morphoFeatureTab">
                 <p class="lead">Search morphology by characteristic</p>
                   <!-- Grid like format for input UI in Morpho Features Tab Content -->
-                    <!-- Size Features Slider-->
+                    <!-- Size Features Slider + Circularity Slider-->
                     <div class="row">
+
                       <div class="col-lg-auto">
                         <label class="form-label lead" for="sizeRange">Size Slider</label>
                         <input type="range" class="form-range" id="sizeRange" min="0" max="100">
                         <p> current slider value: {to be changed via js}</p>
                       </div>
-                    </div>
-                    <!-- End of Size Features Slider-->
 
-                    <div class="mb-3"></div>
+                      <div class="col-lg-auto">
+                        <label class="form-label lead" for="circularitySlider">Circularity Slider</label>
+                        <input type="range" class="form-range" id="circularityRange" min="0" max="1" step="0.01">
+                        <p> current slider value: {to be changed via js}</p>
+                      </div>
+                    <!-- End of Size Features Slider + Circularity Slider-->
 
-                    <!-- Density Features Slider-->
-                    <div class="row">
+                      <div class="w-100"></div>
+                      <div class="mb-3"></div>
+
+                    <!-- Density Features Slider + Convexity Features Slider-->
+
                       <div class="col-lg-auto">
                         <label class="form-label lead" for="densityRange">Density Slider</label>
                         <input type="range" class="form-range" id="densityRange" min="0" max="100">
                         <p> current slider value: {to be changed via js}</p>
                       </div>
-                    </div>
-                    <!-- End of Density Features Slider-->
 
+                      <div class="col-lg-auto">
+                        <label class="form-label lead" for="convexitySlider">Convexity Slider</label>
+                        <input type="range" class="form-range" id="convexityRange" min="0" max="1" step="0.01">
+                        <p> current slider value: {to be changed via js}</p>
+                      </div>
+
+                    <!-- End of Density Features Slider + Convexity Features Slider-->
+
+                      <div class="w-100"></div>
+                      <div class="mb-3"></div>
+                      
+
+                    <!-- Inertia Slider -->
+                      
+                        <div class="col-lg-auto offset-md-2">
+                          <label class="form-label lead" for="inertiaSlider">Inertia Slider</label>
+                          <input type="range" class="form-range" id="inertiaRange" min="0" max="1" step="0.01">
+                          <p> current slider value: {to be changed via js}</p>
+                        </div>
+                    </div>
+                    <!-- End of Inertia Slider -->
+
+                    <div class="w-100"></div>
                     <div class="mb-3"></div>
 
                     <!-- Start of RGB Color Text Fields-->
-                    <label class="form-label lead" for="colorRow">Color Input Section</label>
+                    <div class="row">
+                      <div class="col-lg-auto offset-md-2">
+                        <label class="form-label lead" for="colorRow">Color Input Section</label>
+                      </div>
+                    </div>
+
+                    <div class="w-100"></div>
+                    <div class="mb-3"></div>
+
+                    
                     <div class="row" id="colorRow">
                       <div class="col-lg-auto">
                         <label class="form-label" for="redTextBox">R</label>
@@ -610,30 +648,37 @@
                     <!-- End of RGB Color Text Fields-->
                   <!-- End of Grid like format for input UI in Morpho Features Tab Content -->  
 
+                  <div class="mb-3"></div>
+
                   <div class="row">
-                    <div class="mb-3"></div>
                     <div class="col-lg-auto">
                       <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
                     </div>
                   </div>
-
               </div>
+
               <!-- End of Morpho Feature Tab Content -->
 
 
-              <!-- Morpho Specific Tab Content-->
-              <div class="tab-pane fade" id="morphoSpecificTabContent" role="tabpabel" aria-labelledby="morphoSpecificTab">
-                <div class="mb-3"></div>
-                <div class="col-lg-11">
-                  <label for="specimen-id-field-1" class="form-label">Input first specimen ID here</label>
-                  <textarea id="specimen-id-field-1" class="form-control"></textarea>
 
-                  <label for="specimen-id-field-2" class="form-label">Input second specimen ID here</label>
-                  <textarea id="specimen-id-field-2" class="form-control"></textarea> <br>
-                  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
+
+
+
+              <!-- Morpho Specific Tab Content-->
+                <div class="tab-pane fade" id="morphoSpecificTabContent" role="tabpabel" aria-labelledby="morphoSpecificTab">
+                  <div class="mb-3"></div>
+                  <div class="col-lg-11">
+                    <label for="specimen-id-field-1" class="form-label">Input first specimen ID here</label>
+                    <textarea id="specimen-id-field-1" class="form-control"></textarea>
+
+                    <label for="specimen-id-field-2" class="form-label">Input second specimen ID here</label>
+                    <textarea id="specimen-id-field-2" class="form-control"></textarea> <br>
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#morphoTab3ContentModal"> PopUp Button </button>
+                  </div>               
                 </div>
+                <!-- End of Morpho Specific Tab Content-->
               </div>
-              <!-- End of Morpho Specific Tab Content-->
+              
             </div>
 
 
