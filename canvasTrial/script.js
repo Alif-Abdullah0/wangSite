@@ -23,27 +23,29 @@ let blue = 255;
 // smth is. every time you change a slider, you clear the canvas,
 // redraw everything but with the changed characteristics. Using input and percent on to 
 // make slider change automatically
-var $sze=$('#sizeRange');
-$sze.on('input',function(){
-    draw(parseInt($sze.val()));
+
+
+//TODO: need to figure out how to store percentage stuff,, why won't this 
+//code below compile??
+
+var $percent=$('#sizeRange');
+$percent.on('input',function(){
+    draw(parseInt($percent.val()));
 });
 
 
 //circularity slider
-
 //density slider 
-
 //convexity slider
-
 //inertia slider 
-
 //red slider
-
 //green slider
-
 //blue slider 
 
 
+// draw function is called wheenver slider changes, draw function will call 
+// separate js functions that changae color, intertia...the values will be 
+// stored variables 
 
 function draw(x) {
     
